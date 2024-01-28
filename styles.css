@@ -1,0 +1,421 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: #0077b6;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0077b6;
+    padding: 0.5em;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0px 20px;
+    border-radius: 0px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px; /* Agrega un margen superior para evitar superposiciones */
+
+}
+
+/* Estilos para cada pestaña */
+.pestaña {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los encabezados de sección */
+h2 {
+    color: white;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+    
+
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0077b6;
+    color: #fff;
+}
+
+/* Estilo para hacer que el texto ocupe el ancho completo */
+.full-width {
+    width: 100%;
+}
+
+/* Estilos para el título en la página de inicio */
+.inicio h2 {
+    background-image: url("oftamologiaia1.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 23px;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    
+}
+
+.servicios h2 {
+    background-image: url("servicios.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+
+}
+
+.optica h2 {
+    background-image: url("optica.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+.quienessomos h2 {
+    background-image: url("acerca.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+.contacto h2 {
+    background-image: url("contacto.png");
+    background-size: cover;
+    background-position:center;
+    color: #fff;
+    text-align: center;
+    padding: 80px;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;}
+
+
+.btn-agendar-cita {
+    text-decoration: none;
+    background-color: #0096c7;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #0096c7;
+    /* Borde de 2px con el mismo color que el fondo */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-agendar-cita:hover {
+    transform: scale(1.05);
+    /* Escala al 105% del tamaño original */
+    background-color: #0077b6;
+    /* Cambia el color de fondo al poner el mouse encima */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.364);
+    /* Agrega una sombra suave al poner el mouse encima */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+
+footer div {
+    text-align: center;
+    flex: 1;
+}
+
+/* Estilos para las imágenes en la página de inicio */
+.imagenes-inicio {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    background-color: #202020;
+
+}
+
+.imagenes-inicio .imagen-info {
+    width: calc(60% - 20px);
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    /* Cambia la dirección de los elementos a columna */
+    align-items: center;
+    /* Centra horizontalmente los elementos */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.imagenes-inicio .imagen-info:hover {
+    transform: scale(1);
+    /* Restaura el tamaño original en :hover */
+
+}
+
+.imagenes-inicio a {
+    text-decoration: none;
+    color: #000;
+    /* Color del texto debajo de la imagen */
+
+
+}
+
+.imagenes-inicio p {
+    margin-top: 10px;
+    /* Espacio entre la imagen y la descripción */
+    font-weight: bold;
+
+}
+
+.imagenes-inicio.mostrando {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 20px;
+    /* Espacio entre las imágenes */
+
+}
+
+.imagenes-inicio img {
+    width: 100%;
+    /* Ancho del 100% para que todas las imágenes tengan el mismo tamaño */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+
+}
+
+.textoabajo {
+    background-color: #fff;
+    /* Cambia este valor al color de fondo deseado */
+    padding: 20px;
+    /* Ajusta el espacio alrededor del texto según sea necesario */
+    font-size: 18px;
+    /* Cambia el tamaño de fuente según sea necesario */
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.textoserviarriba {
+    background-color: #fff;
+    /* Cambia este valor al color de fondo deseado */
+    padding: 0px;
+    /* Ajusta el espacio alrededor del texto según sea necesario */
+    font-size: 20px;
+    /* Cambia el tamaño de fuente según sea necesario */
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+.opciones {
+    display: none;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+}
+
+.opciones p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #000000;
+}
+
+.consultas:hover {
+    background-color: #e0e0e000;
+    transform: scale(1.03);
+}
+
+/* Estilos para el cuadro de Consultas */
+.consultas {
+    position: relative;
+    border-bottom: 2px solid #000;
+    /* Línea negra en la parte inferior */
+    padding: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+/* Estilos para el estado-consultas */
+.estado-consultas {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff00;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#contenedor-especialistas {
+    display: flex;
+    align-items: center;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flecha-especialistas {
+    margin-left: 10px;
+    /* Ajusta el margen izquierdo para separar el texto de la flecha */
+}
+
+/* Estilos para el texto "Consultas" */
+.consultas h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.letter {
+    background-image: linear-gradient(to left, green, rgb(12, 189, 189));
+    font-size: 45px;
+    border-radius: 500%;
+}
+
+.boton-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    /* Ajusta la distancia desde la parte inferior */
+    right: 20px;
+    /* Ajusta la distancia desde la izquierda */
+    z-index: 999;
+    /* Asegura que esté por encima de otros elementos */
+    transition: opacity 0.3s ease;
+    /* Agrega una transición suave para la opacidad */
+}
+
+.boton-whatsapp:hover {
+    opacity: 0.8;
+    /* Cambia la opacidad cuando el mouse está encima */
+}
+
+.boton-insta {
+    position: fixed;
+    bottom: 100px;
+    /* Ajusta la distancia desde la parte inferior */
+    right: 20px;
+    /* Ajusta la distancia desde la izquierda */
+    z-index: 999;
+    /* Asegura que esté por encima de otros elementos */
+    transition: opacity 0.3s ease;
+    /* Agrega una transición suave para la opacidad */
+}
+
+.boton-maps {
+    position: fixed;
+    bottom: 180px;
+    /* Ajusta la distancia desde la parte inferior */
+    right: 20px;
+    /* Ajusta la distancia desde la izquierda */
+    z-index: 999;
+    /* Asegura que esté por encima de otros elementos */
+    transition: opacity 0.3s ease;
+    /* Agrega una transición suave para la opacidad */
+}
+
+.boton-insta:hover {
+    opacity: 0.8;
+    /* Cambia la opacidad cuando el mouse está encima */
+}
+
+.opciones p {
+    margin-bottom: 20px;
+    /* Ajusta la cantidad de espacio entre los párrafos */
+    font-size: 18px;
+    color: #000000;
+}
+
+nav ul li a.activo {
+    color: #ffffff;
+    border-bottom: 5px solid #ffffff;
+    margin-bottom: 10px;
+}
+.font-control {
+    position: fixed;
+    left: 10px; /* Ajusta la posición del botón flotante según tus preferencias */
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0074d9; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 50%;
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    font-size: 20px; /* Tamaño de fuente del botón */
+    cursor: pointer;
+    z-index: 1000; /* Asegura que esté en la parte superior de otros elementos */
+}
+
+.font-control:hover {
+    background: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
+}

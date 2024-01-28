@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="ruta_del_logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica CEVI</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica CEVI</title>
+    
+</head>
+
+<body>
+    <button id="cambiarFuente" class="font-control">A+</button>
+    <nav>
+        <ul>
+            <img src="logo.png" alt="Descripción de la imagen"
+                style="float: left; margin-left: 10px; width: 50px;margin-top: -7px;">
+            <p style="float: left; margin-left: 0px; width: 50px;margin-top: 0px;color: #fff;">CEVI</p>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#optica">Óptica</a></li>
+            <li><a href="#quienessomos">Quiénes Somos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="inicio pestaña">
+            <h2><p>CEVI</p> 
+                <p>Centro Especializado De La Visión</p>
+            </h2>
+            <p style="font-style: italic; font-weight: lighter;">¿Necesitas hablar con un doctor específico?</p>
+            <a href="#contacto" class="btn-agendar-cita">Agendar una Cita</a>
+            <div class="textoabajo">
+                <p>Grupo selecto de profesionales especialistas y subespecialistas
+                    en salud visual con amplia experiencia en el sector, actualmente
+                    todos nuestros especialistas laboran en las más prestigiosas clínicas
+                    oftalmológicas y hospitales del Departamento de Antioquia, nuestros cirujanos
+                    tienen más de 5.000 cirugías exitosas en las diferentes especialidades oftalmológicas
+                    con los resultados esperados y planeados.
+                </p>
+            </div>
+            <video width="640" height="360" controls>
+                <source src="videoofta.mp4" type="video/mp4">
+                <source src="videoofta.mp4" type="video/webm">
+            </video>
+            <div class="especialistas">
+                <div id="contenedor-especialistas" class="centrado">
+                    <p style="font-size: 30px; font-weight: bold; cursor: pointer;" id="mostrar-especialistas"
+                        onmouseover="this.style.color='#00000098'" onmouseout="this.style.color='#000'">Nuestros
+                        especialistas</p>
+                    <span id="flecha-especialistas" style="font-size: 20px;">▼</span>
+                </div>
+            </div>
+
+
+            <!-- Agrega las imágenes con descripciones abajo -->
+            <div class="imagenes-inicio">
+                <div class="imagen-info">
+                    <img src="doctor4.jpg" alt="Descripción de la imagen 1">
+                    <p class="info" style="display: none;color: #fff;">Dr. Sergio José Rojas Rangel
+                    <p style=" color: #fff;">Optómetra - Optómetra Pediátrico y Ortóptista</p>
+                    </p>
+                </div>
+                <div class="imagen-info">
+                    <img src="doctor3.jpg" alt="Descripción de la imagen 1">
+                    <p class="info" style="display: none;color: #fff;">Dr. Jairo Alberto Ropero Rosillo
+                    <p style=" color: #fff;">Oftalmólogo - Oftalmopediatra y Estrabólogo </p>
+                    </p>
+                </div>
+                <div class="imagen-info">
+                    <img src="doctor2.jpg" alt="Descripción de la imagen 1">
+                    <p class="info" style="display: none;color: #fff;">Dra. Laura Vanessa Romero De León
+                    <p class="info" style="color: #fff;">Oftalmóloga - Glaucomatóloga </p>
+                    </p>
+
+                </div>
+                <div class="imagen-info">
+                    <img src="doctor1.jpg" alt="Descripción de la imagen 1">
+                    <p class="info" style="display: none;color: #fff;">Dr. Mauricio Agudelo Cardona
+                    <p style=" color: #fff;">Oftalmólogo - Corneólogo </p>
+                    </p>
+                </div>
+                <div class="imagen-info">
+                    <img src="doctor5.jpg" alt="Descripción de la imagen 1">
+                    <p class="info" style="display: none;color: #fff;">Dr. José Agustín Jaramillo Solá
+                    <p style=" color: #fff;">Oftalmólogo - Retinólogo </p>
+                    </p>
+                </div>
+                <div class="imagen-info">
+                    <img src="doctor6.jpg" alt="Descripción de la imagen 1">
+                    <p class="info" style="display: none;color: #fff;">Dra. Liliana Marcela Galeano Salazar
+                    <p style=" color: #fff;">Oftalmóloga General </p>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="servicios pestaña">
+            <h2 style="margin-left: 0px;">Nuestros Servicios</h2>
+            <p><strong><span style="font-size: 30px;">Lista de servicios.</span></strong></p>
+            <div class="textoserviarriba">
+                <p>a visión es de las partes mas importantes y hermosas de la vida por ello te acompañamos en el proceso
+                    de cuidarte de manera preventiva o también ayudarte a tratar un problema existente con nuestro gran
+                    equipo que esta dispuesto a atenderte y ayudarte de la mejor manera.</p>
+            </div>
+            <div class="consultas">
+                <h3>Consultas</h3>
+                <div class="estado-consultas"> <!-- Elemento para mostrar el estado -->
+                    <span>▼</span> <!-- Inicialmente cerrado -->
+                </div>
+                <div class="opciones">
+                    <p>• Consulta de Oftalmología General.</p>
+                    <p>• Consulta de Oftalmología Especializada en Glaucoma.</p>
+                    <p>• Consulta de Oftalmología Especializada en Córnea y Segmento Anterior.</p>
+                    <p>• Consulta de Oftalmología Especializada en Oftalmopediatría y Estrabismo.</p>
+                    <p>• Consulta de Oftalmología Especializada en Retina y Vítreo.</p>
+                    <p>• Consulta de Oftalmología Prioritaria y/o Urgente.</p>
+                    <p>• Consulta de Optometría Clínica.</p>
+                    <p>• Consulta Especializada en Optometría Pediátrica.</p>
+                    <p>• Consulta, Terapias de Ortóptica y Pleóptica.</p>
+                    <p>• Adaptación de Lentes de Contacto.</p>
+                    <p>• Óptica.</p>
+                </div>
+            </div>
+            <div class="consultas">
+                <h3>Unidades especializadas</h3>
+                <div class="estado-consultas"> <!-- Elemento para mostrar el estado -->
+                    <span>▼</span> <!-- Inicialmente cerrado -->
+                </div>
+                <div class="opciones">
+                    <p>• Unidad Completa Para el Control de Miopía (Optometría, Retinología, Oftalmopediatría, Biometría
+                        IOL MASTER).</p>
+                    <p>• Unidad Completa en Segmento Anterior (Corneología y Optometría).</p>
+                    <p>• Unidad Completa de Glaucoma (Glaucomatología y Optometría Baja Visión).</p>
+                    <p>• Unidad Completa de Retina (Retinología y Optometría Baja Visión).</p>
+                    <p>• Unidad Completa de PYP Oftalmológico (Oftalmología y Medicina Interna).</p>
+                    <p>• Unidad Completa en Salud Infantil (Oftalmopediatría y Médico Pediatra).</p>
+                    <p>• Unidad Completa Bebe Canguro (Oftalmopediatría, Optometría Pediátrica y Médico Pediatra).</p>
+                </div>
+            </div>
+            <div class="consultas">
+                <h3>Cirugias</h3>
+                <div class="estado-consultas"> <!-- Elemento para mostrar el estado -->
+                    <span>▼</span> <!-- Inicialmente cerrado -->
+                </div>
+                <div class="opciones">
+                    <p>• Cirugía de Pterigion.</p>
+                    <p>• Cirugía de Chalazión.</p>
+                    <p>• Cirugía de Electrolisis de Pestañas.</p>
+                    <p>• Drenaje y Sondeo de Vías Lagrimales.</p>
+                    <p>• Tapones en Vías Lagrimales.</p>
+                    <p>• Cirugía de Parpados.</p>
+                    <p>• Cirugía de Catarata.</p>
+                    <p>• Cirugía Facorefractiva.</p>
+                    <p>• Cirugía de Queratocono.</p>
+                    <p>• Cirugía de Trasplante de Córnea.</p>
+                    <p>• Cirugía Refractiva Laser (miopía, astigmatismo, hipermetropía)</p>
+                    <p>• Cirugía de Glaucoma.</p>
+                    <p>• Cirugía de Retina y Vítreo.</p>
+                    <p>• Cirugía de Estrabismo y Especialidad Oftalmopediátrica.</p>
+                    <p>• Inyecciones Intravitreas.</p>
+                </div>
+            </div>
+            <div class="consultas">
+                <h3>Procedimientos</h3>
+                <div class="estado-consultas"> <!-- Elemento para mostrar el estado -->
+                    <span>▼</span> <!-- Inicialmente cerrado -->
+                </div>
+                <div class="opciones">
+                    <p>• Iridotomía Laser.</p>
+                    <p>• Iridoplástia Laser.</p>
+                    <p>• Capsulotomía Laser.</p>
+                </div>
+            </div>
+        </div>
+  
+    <div class="optica pestaña">
+        <h2>Óptica</h2>
+        <div class="textoserviarriba">
+            <p>Contamos con S.O.S ÓPTICA la cual es una reconocida óptica con más de 10 años
+                de experiencia en el mercado, cuentan con laboratorios para la fabricación de lentes
+                oftálmicos de gran trayectoria y la mejor calidad tales como ZEISS, MEGALENS, PRECIZONLAB,
+                SERVIOPTICA, VISIONLAB y grandes proveedores en monturas para cubrir todas las necesidades
+                de sus usuarios; atendido por su representante legal y propietaria Alejandra Catalina
+                Sepúlveda Rivillas.</p>
+        </div>
+        <a href="https://m.facebook.com/p/SOS-Optica-100064999628988/" target="_blank">
+            <img src="facebook.png" alt="Descripción de la imagen"
+                style="float: center; margin-right: -20px; width: 55px; margin-bottom: 22.5px;">
+        </a>
+        <a href="https://instagram.com/sos_optica?igshid=MmU2YjMzNjRlOQ==" target="_blank">
+            <img src="Instagram.png" alt="Descripción de la imagen"
+                style="float: center; margin-right: -20px; width: 100px; margin-bottom: 22.5px;">
+        </a>
+        <p>Teléfono: +57 3002817744 </p>
+
+    </div>
+    <div class="quienessomos pestaña">
+        <h2>Quiénes Somos</h2>
+        <div class="textoabajo">
+            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;">MISIÓN</p>
+            <p>Contribuir al cuidado de la salud visual a través de la prestación de servicio de alta calidad centrado
+                en la atención, ética y profesionalismo con un equipo humano altamente capacitado para dar solución y
+                manejo a cualquier problema de salud visual que se presente.
+            </p>
+            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;">VISIÓN
+            </p>
+            <p>Para el año 2025, ser una de las instituciones especializadas en salud visual más reconocidas y queridas
+                del Oriente Antioqueño, consolidándose como un centro especializado con altos estándares de calidad en
+                la atención y manejo de las alteraciones de la visión a nuestros usuarios.
+            </p>
+        </div>
+    </div>
+    <div class="contacto pestaña" id="contacto">
+        <h2>Contacto</h2>
+        <div class="textoabajo">
+            
+            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;">Medios de contacto para citas</p>
+            <p>Teléfono: +57 3192136049</p>
+            <p>WhatsApp: +57 3192136049</p>
+            <p>Correo: cevirionegro@gmail.com</p>
+            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;">Horarios
+            </p>
+            <p>Lunes a viernes 9am - 6pm </p>
+            <p>Sábados 9am - 4pm</p>
+            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;"> Visítanos</p>
+            <p>Nos encontramos en la Carrera 55 a No 35 - 227, Rionegro, Antioquia.</p>
+            <p>City Médica</p>
+            <p>Torre 2 Consultorio 303
+            </p>
+        </div>
+        <p><a href="https://maps.app.goo.gl/8Au96peNH6fU2JB16" target="_blank"><img src="maps.png"
+                    alt="Mapa de ubicación"></a></p>
+    </div>
+    <div id="texto-doctor" style="display: none;">
+        <p>¿Listo para cuidar tu vista? Contáctanos para programar una cita.</p>
+    </div>
+    </div>
+    </div>
+    <div class="boton-whatsapp">
+        <a href="https://wa.me/3192136049" target="_blank">
+            <img src="WhatsApp2.png" alt="WhatsApp" width="50" height="50">
+        </a>
+    </div>
+    <div class="boton-insta">
+        <a href="https://instagram.com/cevirionegro?igshid=MmU2YjMzNjRlOQ==" target="_blank">
+            <img src="instagram2.png" alt="instagram" width="50" height="50">
+        </a>
+    </div>
+    </div>
+    <div class="boton-maps">
+        <a href="https://maps.app.goo.gl/8Au96peNH6fU2JB16" target="_blank">
+            <img src="maps_c.png" alt="maps" width="50" height="50">
+        </a>
+    </div>
+    <footer class="full-width" style="display: flex; justify-content: center; align-items: center;">
+        <img src="logo.png" alt="Descripción de la imagen"
+            style="float: left; width: 200px;">
+            <div style="text-align: left;">
+                <p>Horario de Atención</p>
+                <p>Lunes a viernes: 9am-6pm</p>
+                <p>Sábados: 9am-4pm</p>
+            </div>
+        <div style="float: left; margin-right: 37%;">
+            <p>City Médica</p>
+            <p>Torre 2 Consultorio 303</p>
+            <p>Telefono: +57 319 2136049</p>
+            <p>WhatsApp: +57 319 2136049</p>
+            <p>Correo: cevirionegro@gmail.com</p>
+            <p>Carrera 55 a No 35 - 227, Rionegro, Antioquia</p>
+            <p>&copy; 2023 Clínica CEVI. Todos los derechos reservados.</p>
+            <a href="https://wa.me/3192136049" target="_blank">
+                <img src="whatsapp.jpg" alt="Descripción de la imagen"
+                    style="float: center; margin-right: 20px; width: 30px; margin-top: -110px;">
+            </a>
+            <a href="https://instagram.com/cevirionegro?igshid=MmU2YjMzNjRlOQ==" target="_blank">
+                <img src="Instagram.png" alt="Descripción de la imagen"
+                    style="float: center; margin-right: 20px; width: 30px; margin-bottom: 7.5px;">
+            </a>
+            
+        </div>
+    </div>
+    </footer>
+    <script>
+        const enlaces = document.querySelectorAll("nav ul li a");
+        const pestañas = document.querySelectorAll(".pestaña");
+        const btnAgendarCita = document.querySelector(".btn-agendar-cita");
+        const consultas = document.querySelectorAll(".consultas");
+        const opciones = document.querySelectorAll(".opciones");
+        const estadoConsultas = document.querySelectorAll(".estado-consultas span");
+
+        document.addEventListener("DOMContentLoaded", function () {
+    // Encuentra el botón por su ID
+    const cambiaFuente = document.getElementById("cambiarFuente");
+
+    // Obtén el tamaño de fuente actual
+    const body = document.body;
+    const estilosBody = window.getComputedStyle(body);
+    const tamañoFuenteActual = parseInt(estilosBody.getPropertyValue("font-size"));
+
+    // Define el incremento deseado
+    const incremento = 4; // Puedes ajustar este valor según tus preferencias
+
+    // Función para aumentar o reducir la fuente
+    cambiaFuente.addEventListener("click", function () {
+        const tamañoFuente = parseInt(estilosBody.getPropertyValue("font-size"));
+        body.style.fontSize = tamañoFuente === tamañoFuenteActual ? tamañoFuente + incremento + "px" : tamañoFuenteActual + "px";
+    });
+});
+        // Función para ocultar todos los cuadros de opciones
+        function ocultarOpciones() {
+            opciones.forEach((opcion) => {
+                opcion.style.display = "none";
+            });
+
+            estadoConsultas.forEach((estado) => {
+                estado.textContent = "▼"; // Restablecer todos los estados a cerrados
+            });
+        }
+
+        // Función para mostrar una pestaña específica
+        function mostrarPestana(pestana) {
+            pestañas.forEach((pestaña) => {
+                pestaña.style.display = "none";
+            });
+            document.querySelector(`.${pestana}.pestaña`).style.display = "block";
+        }
+        function resaltarPestanaActiva(pestana) {
+            enlaces.forEach((enlace) => {
+                enlace.classList.remove("activo");
+            });
+
+            pestañas.forEach((p) => {
+                p.style.display = "none";
+            });
+
+            pestana.style.display = "block";
+            enlaces[Array.from(pestañas).indexOf(pestana)].classList.add("activo");
+        }
+        // Agrega eventos a los enlaces de navegación
+        enlaces.forEach((enlace) => {
+            enlace.addEventListener("click", (event) => {
+                event.preventDefault();
+                const href = enlace.getAttribute("href").substr(1);
+                const pestana = document.querySelector(`.${href}.pestaña`);
+                resaltarPestanaActiva(pestana);
+                ocultarOpciones();
+            });
+        });
+        // Agrega evento para el botón "Agendar Cita"
+        btnAgendarCita.addEventListener("click", () => {
+            const pestana = document.querySelector(".contacto.pestaña");
+            resaltarPestanaActiva(pestana);
+            ocultarOpciones();
+        });
+
+        // Agrega eventos a los cuadros de "Consultas"
+        consultas.forEach((consulta, index) => {
+            consulta.addEventListener("click", () => {
+                if (opciones[index].style.display === "none" || !opciones[index].style.display) {
+                    ocultarOpciones(); // Cierra todas las opciones antes de abrir una nueva
+                    opciones[index].style.display = "block";
+                    estadoConsultas[index].textContent = "▲";
+                } else {
+                    opciones[index].style.display = "none";
+                    estadoConsultas[index].textContent = "▼";
+                }
+            });
+        });
+
+        // Mostrar la pestaña de inicio al cargar la página
+        window.addEventListener("load", () => {
+            const pestanaInicio = document.querySelector(".inicio.pestaña");
+            resaltarPestanaActiva(pestanaInicio);
+        });
+
+        // JavaScript para mostrar texto oculto al hacer clic en una imagen de doctor
+        const imagenesInfo = document.querySelectorAll(".imagen-info");
+        imagenesInfo.forEach((imagenInfo) => {
+            const info = imagenInfo.querySelector(".info");
+            imagenInfo.addEventListener("mouseover", () => {
+                info.style.display = "block"; // Mostrar el texto al pasar el mouse por encima
+            });
+            imagenInfo.addEventListener("mouseout", () => {
+                info.style.display = "none"; // Ocultar el texto al quitar el mouse
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const mostrarEspecialistas = document.getElementById("mostrar-especialistas");
+            const imagenesInicio = document.querySelector(".imagenes-inicio");
+            const flechaEspecialistas = document.getElementById("flecha-especialistas");
+
+            mostrarEspecialistas.addEventListener("click", function () {
+                // Alternar la clase "mostrando" en el div de imágenes
+                imagenesInicio.classList.toggle("mostrando");
+                if (imagenesInicio.classList.contains("mostrando")) {
+                    flechaEspecialistas.textContent = "▲"; // Cambiar a flecha hacia arriba
+                } else {
+                    flechaEspecialistas.textContent = "▼"; // Cambiar a flecha hacia abajo
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
