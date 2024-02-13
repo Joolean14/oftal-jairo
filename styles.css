@@ -71,13 +71,6 @@ h2 {
   -webkit-text-stroke: 1.5px rgb(0, 0, 0);
 }
 
-/* Estilos para el pie de página */
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #0077b6;
-  color: #fff;
-}
 
 /* Estilo para hacer que el texto ocupe el ancho completo */
 .full-width {
@@ -169,10 +162,10 @@ footer {
   position: relative;
 }
 
-footer div {
+/* footer div {
   text-align: center;
   flex: 1;
-}
+} */
 
 /* Estilos para las imágenes en la página de inicio */
 .imagenes-inicio {
@@ -419,5 +412,28 @@ a.navbar-item:hover {
 /* .navbar-item.activo {
     color: #ffffff;
     border-bottom: 5px solid #ffffff;
-    /* margin-bottom: 10px; */
+    /* margin-bottom: 10px; 
   } */
+
+  /* Estilos para el pie de página */
+footer {
+  text-align: center;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+
+.logo-footer {
+  width: 40%;
+  height: 40%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo-footer {
+    width: 20%;
+    height: 20%;
+  }
+  
+
+
+}

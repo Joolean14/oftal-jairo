@@ -291,46 +291,42 @@
             <img src="maps_c.png" alt="maps" width="50" height="50">
         </a>
     </div>
-    <footer class="full-width" style="display: flex; justify-content: center; align-items: center;">
-        <img src="logo.png" alt="Descripción de la imagen"
-            style="float: left; width: 200px;">
-            <div style="text-align: left;">
-                <p>Horario de Atención</p>
+
+    <footer class="full-width py-2">
+        <div class="">
+          <div class="columns">
+
+            <div class="column is-flex is-align-content-center is-justify-content-center is-12-mobile is-4-tablet">
+                <img class="logo-footer mt-2" src="logo.png" alt="Logo">
+            </div>
+    
+            <div class="column is-flex is-flex-direction-column is-align-content-center is-justify-content-center is-12-mobile is-4-tablet">
+                <p class="title is-4 mb-4">City Médica</p>
+                <p>Torre 2 Consultorio 303</p>
+                <p><span class="has-text-weight-bold">Telefono:</span> +57 319 2136049</p>
+                <p><span class="has-text-weight-bold">WhatsApp:</span> +57 319 2136049</p>
+                <p><span class="has-text-weight-bold">Correo:</span> cevirionegro@gmail.com</p>
+                <p>Carrera 55 a No 35 - 227, Rionegro, Antioquia</p>
+                <p>&copy; <span id="currentYear"></span> Clínica CEVI. Todos los derechos reservados.</p>
+            </div>
+            
+            <div class="column is-flex is-flex-direction-column is-align-content-center is-justify-content-start is-12-mobile is-4-tablet">
+                <p class="title mb-2 is-5">Horario de Atención</p>
                 <p>Lunes a viernes: 9am-6pm</p>
                 <p>Sábados: 9am-4pm</p>
-            </div>
-        <div style="float: left; margin-right: 37%;">
-            <p>City Médica</p>
-            <p>Torre 2 Consultorio 303</p>
-            <p>Telefono: +57 319 2136049</p>
-            <p>WhatsApp: +57 319 2136049</p>
-            <p>Correo: cevirionegro@gmail.com</p>
-            <p>Carrera 55 a No 35 - 227, Rionegro, Antioquia</p>
-            <p>&copy; 2023 Clínica CEVI. Todos los derechos reservados.</p>
-            <a href="https://wa.me/3192136049" target="_blank">
-                <img src="whatsapp.jpg" alt="Descripción de la imagen"
-                    style="float: center; margin-right: 20px; width: 30px; margin-top: -110px;">
-            </a>
-            <a href="https://instagram.com/cevirionegro?igshid=MmU2YjMzNjRlOQ==" target="_blank">
-                <img src="Instagram.png" alt="Descripción de la imagen"
-                    style="float: center; margin-right: 20px; width: 30px; margin-bottom: 7.5px;">
-            </a>
-            
+            </div>         
+          </div>
         </div>
-    </div>
-    </footer>
-
-    <!-- <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-          </p>
-        </div>
-      </footer> -->
+      </footer>
       
     <script src="app.js" defer></script>
+    <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+    
+        // Display the current year in the HTML
+        document.getElementById("currentYear").innerHTML = currentYear;
+      </script>
 </body>
 
 </html>
