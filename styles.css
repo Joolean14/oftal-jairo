@@ -275,8 +275,8 @@ h2 {
   cursor: pointer;
   margin: 10px;
   transition: background-color 0.3s, transform 0.3s;
-  margin-left: 400px;
-  margin-right: 400px;
+  /* margin-left: 400px;
+  margin-right: 400px; */
 }
 
 /* Estilos para el estado-consultas */
@@ -435,5 +435,16 @@ footer {
   }
   
 
+
+}
+
+.iframe-div {
+  width: 75vw;
+  margin: auto;
+}
+
+.subtitles {
+  font-size: 30px;
+  font-weight: bold;
 
 }

@@ -63,24 +63,30 @@
 
     <div class="container">
         <div class="inicio pestaña">
-            <h2><p>CEVI</p> 
-                <p>Centro Especializado De La Visión</p>
+            <h2>CEVI<br>
+                Centro Especializado De La Visión
             </h2>
-            <p style="font-style: italic; font-weight: lighter;">¿Necesitas hablar con un doctor específico?</p>
+            <p class="my-5">¿Necesitas hablar con un doctor específico?</p>
             <a href="#contacto" class="btn-agendar-cita">Agendar una Cita</a>
-            <div class="textoabajo">
-                <p>Grupo selecto de profesionales especialistas y subespecialistas
+            <!-- <div class="textoabajo"> -->
+                <p class="px-3 my-5">Grupo selecto de profesionales especialistas y subespecialistas
                     en salud visual con amplia experiencia en el sector, actualmente
                     todos nuestros especialistas laboran en las más prestigiosas clínicas
                     oftalmológicas y hospitales del Departamento de Antioquia, nuestros cirujanos
                     tienen más de 5.000 cirugías exitosas en las diferentes especialidades oftalmológicas
                     con los resultados esperados y planeados.
                 </p>
+            <!-- </div> -->
+           
+            <div class="iframe-div">
+                <figure class="image is-16by9">
+                    <iframe class="has-ratio p-1" width="560" height="315"
+                    src="https://www.youtube.com/embed/eOV15a0yLAc?si=gk0t_GEuCx4zqEbX" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </figure>
             </div>
-            <video width="640" height="360" controls>
-                <source src="videoofta.mp4" type="video/mp4">
-                <source src="videoofta.mp4" type="video/webm">
-            </video>
             <div class="especialistas">
                 <div id="contenedor-especialistas" class="centrado">
                     <p style="font-size: 30px; font-weight: bold; cursor: pointer;" id="mostrar-especialistas"
@@ -133,15 +139,17 @@
             </div>
 
         </div>
+
+
         <div class="servicios pestaña">
             <h2 style="margin-left: 0px;">Nuestros Servicios</h2>
             <p><strong><span style="font-size: 30px;">Lista de servicios.</span></strong></p>
-            <div class="textoserviarriba">
-                <p>a visión es de las partes mas importantes y hermosas de la vida por ello te acompañamos en el proceso
+            <!-- <div class="textoserviarriba"> -->
+                <p class="px-4 my-4">La visión es de las partes mas importantes y hermosas de la vida por ello te acompañamos en el proceso
                     de cuidarte de manera preventiva o también ayudarte a tratar un problema existente con nuestro gran
                     equipo que esta dispuesto a atenderte y ayudarte de la mejor manera.</p>
-            </div>
-            <div class="consultas">
+            <!-- </div> -->
+            <div class="consultas mx-5">
                 <h3>Consultas</h3>
                 <div class="estado-consultas"> <!-- Elemento para mostrar el estado -->
                     <span>▼</span> <!-- Inicialmente cerrado -->
@@ -160,7 +168,7 @@
                     <p>• Óptica.</p>
                 </div>
             </div>
-            <div class="consultas">
+            <div class="consultas mx-5">
                 <h3>Unidades especializadas</h3>
                 <div class="estado-consultas"> <!-- Elemento para mostrar el estado -->
                     <span>▼</span> <!-- Inicialmente cerrado -->
@@ -176,7 +184,7 @@
                     <p>• Unidad Completa Bebe Canguro (Oftalmopediatría, Optometría Pediátrica y Médico Pediatra).</p>
                 </div>
             </div>
-            <div class="consultas">
+            <div class="consultas mx-5">
                 <h3>Cirugias</h3>
                 <div class="estado-consultas"> <!-- Elemento para mostrar el estado -->
                     <span>▼</span> <!-- Inicialmente cerrado -->
@@ -199,7 +207,7 @@
                     <p>• Inyecciones Intravitreas.</p>
                 </div>
             </div>
-            <div class="consultas">
+            <div class="consultas mx-5">
                 <h3>Procedimientos</h3>
                 <div class="estado-consultas"> <!-- Elemento para mostrar el estado -->
                     <span>▼</span> <!-- Inicialmente cerrado -->
@@ -214,14 +222,14 @@
   
     <div class="optica pestaña">
         <h2>Óptica</h2>
-        <div class="textoserviarriba">
-            <p>Contamos con S.O.S ÓPTICA la cual es una reconocida óptica con más de 10 años
+        <!-- <div class="textoserviarriba"> -->
+            <p class="px-5 my-5">Contamos con S.O.S ÓPTICA la cual es una reconocida óptica con más de 10 años
                 de experiencia en el mercado, cuentan con laboratorios para la fabricación de lentes
                 oftálmicos de gran trayectoria y la mejor calidad tales como ZEISS, MEGALENS, PRECIZONLAB,
                 SERVIOPTICA, VISIONLAB y grandes proveedores en monturas para cubrir todas las necesidades
                 de sus usuarios; atendido por su representante legal y propietaria Alejandra Catalina
                 Sepúlveda Rivillas.</p>
-        </div>
+        <!-- </div> -->
         <a href="https://m.facebook.com/p/SOS-Optica-100064999628988/" target="_blank">
             <img src="facebook.png" alt="Descripción de la imagen"
                 style="float: center; margin-right: -20px; width: 55px; margin-bottom: 22.5px;">
@@ -235,40 +243,51 @@
     </div>
     <div class="quienessomos pestaña">
         <h2>Quiénes Somos</h2>
-        <div class="textoabajo">
-            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;">MISIÓN</p>
-            <p>Contribuir al cuidado de la salud visual a través de la prestación de servicio de alta calidad centrado
+        <!-- <div class="textoabajo"> -->
+            <p class="subtitles my-5">MISIÓN</p>
+            <p class="my-4 mx-5">Contribuir al cuidado de la salud visual a través de la prestación de servicio de alta calidad centrado
                 en la atención, ética y profesionalismo con un equipo humano altamente capacitado para dar solución y
                 manejo a cualquier problema de salud visual que se presente.
             </p>
-            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;">VISIÓN
+            <p class="subtitles my-5">VISIÓN
             </p>
-            <p>Para el año 2025, ser una de las instituciones especializadas en salud visual más reconocidas y queridas
+            <p class="my-4 mx-5">Para el año 2025, ser una de las instituciones especializadas en salud visual más reconocidas y queridas
                 del Oriente Antioqueño, consolidándose como un centro especializado con altos estándares de calidad en
                 la atención y manejo de las alteraciones de la visión a nuestros usuarios.
             </p>
-        </div>
+        <!-- </div> -->
     </div>
     <div class="contacto pestaña" id="contacto">
         <h2>Contacto</h2>
-        <div class="textoabajo">
+        <!-- <div class="textoabajo"> -->
             
-            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;">Medios de contacto para citas</p>
+            <p class="subtitles my-3">Medios de contacto para citas</p>
             <p>Teléfono: +57 3192136049</p>
             <p>WhatsApp: +57 3192136049</p>
             <p>Correo: cevirionegro@gmail.com</p>
-            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;">Horarios
+            <p class="subtitles my-3">Horarios
             </p>
             <p>Lunes a viernes 9am - 6pm </p>
             <p>Sábados 9am - 4pm</p>
-            <p style=" font-weight: bond;font-size: 30px;font-weight: bold;"> Visítanos</p>
+            <p class="subtitles my-3"> Visítanos</p>
             <p>Nos encontramos en la Carrera 55 a No 35 - 227, Rionegro, Antioquia.</p>
             <p>City Médica</p>
             <p>Torre 2 Consultorio 303
             </p>
+        <!-- </div> -->
+        <div class="iframe-div my-4">
+            <figure class="image is-16by9">
+                <iframe class="has-ratio p-1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.464742250226!2d-75.3790676!3d6.1401752!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e469f5e5c0ffbb5%3A0xea2ae4935ce65968!2sCEVI!5e0!3m2!1ses-419!2sco!4v1707971025536!5m2!1ses-419!2sco" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <iframe class="has-ratio p-1" width="560" height="315"
+                src="https://www.youtube.com/embed/eOV15a0yLAc?si=gk0t_GEuCx4zqEbX" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+            </figure>
         </div>
-        <p><a href="https://maps.app.goo.gl/8Au96peNH6fU2JB16" target="_blank"><img src="maps.png"
-                    alt="Mapa de ubicación"></a></p>
+
+        <!-- <p><a href="https://maps.app.goo.gl/8Au96peNH6fU2JB16" target="_blank"><img src="maps.png"
+                    alt="Mapa de ubicación"></a></p> -->
     </div>
     <div id="texto-doctor" style="display: none;">
         <p>¿Listo para cuidar tu vista? Contáctanos para programar una cita.</p>
