@@ -5,43 +5,18 @@ const consultas = document.querySelectorAll(".consultas");
 const opciones = document.querySelectorAll(".opciones");
 const estadoConsultas = document.querySelectorAll(".estado-consultas span");
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Encuentra el botón por su ID
-  const cambiaFuente = document.getElementById("cambiarFuente");
 
-  // Obtén el tamaño de fuente actual
-  const body = document.body;
-  const estilosBody = window.getComputedStyle(body);
-  const tamañoFuenteActual = parseInt(
-    estilosBody.getPropertyValue("font-size")
-  );
 
-  // Define el incremento deseado
-  const incremento = 4; // Puedes ajustar este valor según tus preferencias
+window.addEventListener("load", () => {
+  const homePage = document.querySelector(".inicio");
+  resaltarPestanaActiva(homePage);
 
-  // Función para aumentar o reducir la fuente
-  cambiaFuente.addEventListener("click", function () {
-    const tamañoFuente = parseInt(estilosBody.getPropertyValue("font-size"));
-    body.style.fontSize =
-      tamañoFuente === tamañoFuenteActual
-        ? tamañoFuente + incremento + "px"
-        : tamañoFuenteActual + "px";
-  });
 });
 
 
 
-// Función para ocultar todos los cuadros de opciones
-function ocultarOpciones() {
-  opciones.forEach((opcion) => {
-    opcion.style.display = "none";
-  });
 
-  estadoConsultas.forEach((estado) => {
-    estado.textContent = "▼"; // Restablecer todos los estados a cerrados
-  });
-}
-
+// PAGES ====================================================
 // Función para mostrar una pestaña específica
 function mostrarPestana(pestana) {
   pestañas.forEach((pestaña) => {
@@ -62,6 +37,8 @@ function resaltarPestanaActiva(pestana) {
   pestana.style.display = "block";
   enlaces[Array.from(pestañas).indexOf(pestana)].classList.add("activo");
 }
+
+
 // Agrega eventos a los enlaces de navegación
 enlaces.forEach((enlace) => {
   enlace.addEventListener("click", (event) => {
@@ -72,12 +49,23 @@ enlaces.forEach((enlace) => {
     ocultarOpciones();
   });
 });
-// Agrega evento para el botón "Agendar Cita"
-btnAgendarCita.addEventListener("click", () => {
-  const pestana = document.querySelector(".contacto.pestaña");
-  resaltarPestanaActiva(pestana);
-  ocultarOpciones();
-});
+
+
+
+
+// Accordion =======================================================================
+
+// Función para ocultar todos los cuadros de opciones
+function ocultarOpciones() {
+  opciones.forEach((opcion) => {
+    opcion.style.display = "none";
+  });
+
+  estadoConsultas.forEach((estado) => {
+    estado.textContent = "▼"; // Restablecer todos los estados a cerrados
+  });
+}
+
 
 // Agrega eventos a los cuadros de "Consultas"
 consultas.forEach((consulta, index) => {
@@ -96,12 +84,11 @@ consultas.forEach((consulta, index) => {
   });
 });
 
-// Mostrar la pestaña de inicio al cargar la página
-window.addEventListener("load", () => {
-  const pestanaInicio = document.querySelector(".inicio.pestaña");
-  resaltarPestanaActiva(pestanaInicio);
-});
 
+
+
+
+// DOCTORS ==============================================================================
 // JavaScript para mostrar texto oculto al hacer clic en una imagen de doctor
 const imagenesInfo = document.querySelectorAll(".imagen-info");
 imagenesInfo.forEach((imagenInfo) => {
@@ -131,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// nav bulma
+// Bulma nav ==========================================================================
 document.addEventListener("DOMContentLoaded", () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
@@ -140,15 +127,56 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   // Add a click event on each of them
-  $navbarBurgers.forEach((el) => {
-    el.addEventListener("click", () => {
+  $navbarBurgers.forEach((element) => {
+    element.addEventListener("click", () => {
       // Get the target from the "data-target" attribute
-      const target = el.dataset.target;
+      const target = element.dataset.target;
       const $target = document.getElementById(target);
 
       // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      el.classList.toggle("is-active");
+      element.classList.toggle("is-active");
       $target.classList.toggle("is-active");
     });
   });
 });
+
+let getCurrentYear = new Date().getFullYear();
+document.getElementById("currentYear").innerHTML = getCurrentYear;
+
+// Schedule BTN ======================================================================
+// Agrega evento para el botón "Agendar Cita"
+btnAgendarCita.addEventListener("click", () => {
+  const pestana = document.querySelector(".contacto.pestaña");
+  resaltarPestanaActiva(pestana);
+  ocultarOpciones();
+});
+
+
+
+
+// FONT ==========================================================================
+document.addEventListener("DOMContentLoaded", function () {
+  // Encuentra el botón por su ID
+  const cambiaFuente = document.getElementById("cambiarFuente");
+
+  // Obtén el tamaño de fuente actual
+  const body = document.body;
+  const estilosBody = window.getComputedStyle(body);
+  const tamañoFuenteActual = parseInt(
+    estilosBody.getPropertyValue("font-size")
+  );
+
+  // Define el incremento deseado
+  const incremento = 4; // Puedes ajustar este valor según tus preferencias
+
+  // Función para aumentar o reducir la fuente
+  cambiaFuente.addEventListener("click", function () {
+    const tamañoFuente = parseInt(estilosBody.getPropertyValue("font-size"));
+    body.style.fontSize =
+      tamañoFuente === tamañoFuenteActual
+        ? tamañoFuente + incremento + "px"
+        : tamañoFuenteActual + "px";
+  });
+});
+
+
