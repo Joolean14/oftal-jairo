@@ -7,10 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica CEVI</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
     <link rel="icon" href="logo.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica CEVI</title>
+    <title>Clínica CEVI | Centro Especializado de la Visión</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
 
 </head>
@@ -20,28 +22,36 @@
     <button id="cambiarFuente" class="font-control">A+</button>
 
     <!-- NAV ======================================================================================= -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+
+
+    <nav id="top" class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <p class="navbar-item has-text-weight-bold is-size-4 has-text-white" href="">
-                <img class="mr-1" src="logo.png" width="41" height="28">
-                CEVI
-            </p>
-            <a role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false"
+            <a class="navbar-item" href="">
+                <img src="logo.png" alt="Logo Falso Ídolo">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
+
         <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-            </div>
             <div class="navbar-end">
-                <a class="navbar-item has-text-white" href="#inicio">Inicio</a>
-                <a class="navbar-item has-text-white" href="#servicios">Servicios</a>
-                <a class="navbar-item has-text-white" href="#optica">Óptica</a>
-                <a class="navbar-item has-text-white" href="#quienessomos">Quiénes Somos</a>
-                <a class="navbar-item has-text-white" href="#contacto">Contacto</a>
+                <a href="#videos" class="navbar-item">
+                    Inicio
+                </a>
+                <a href="#quehacemos" class="navbar-item">
+                    Servicios
+                </a>
+                <a href="#repertorio" class="navbar-item">
+                    Óptica
+                </a>
+                <a href="#musicalizaciones" class="navbar-item">
+                    ¿Quiénes somos?
+                </a>
             </div>
         </div>
     </nav>
@@ -49,7 +59,8 @@
 
     <!-- HOME =============================================================================================== -->
     <div class="container">
-        <div class="inicio pestaña">
+        <div class="">
+            <img class="image" src="oftamologiaia1.png">
             <h2>CEVI<br>
                 Centro Especializado De La Visión
             </h2>
@@ -221,15 +232,15 @@
                 de sus usuarios; atendido por su representante legal y propietaria Alejandra Catalina
                 Sepúlveda Rivillas.</p>
             <!-- </div> -->
-                <a href="https://m.facebook.com/p/SOS-Optica-100064999628988/" target="_blank">
-                    <img src="facebook.png" alt="Descripción de la imagen"
+            <a href="https://m.facebook.com/p/SOS-Optica-100064999628988/" target="_blank">
+                <img src="facebook.png" alt="Descripción de la imagen"
                     style="float: center; margin-right: -20px; width: 55px; margin-bottom: 22.5px;">
-                </a>
-                <a href="https://instagram.com/sos_optica?igshid=MmU2YjMzNjRlOQ==" target="_blank">
-                    <img src="Instagram.png" alt="Descripción de la imagen"
+            </a>
+            <a href="https://instagram.com/sos_optica?igshid=MmU2YjMzNjRlOQ==" target="_blank">
+                <img src="Instagram.png" alt="Descripción de la imagen"
                     style="float: center; margin-right: -20px; width: 100px; margin-bottom: 22.5px;">
-                </a>
-                <p>Teléfono: +57 3002817744 </p>
+            </a>
+            <p>Teléfono: +57 3002817744 </p>
         </div>
         <div class="quienessomos pestaña">
             <h2>Quiénes Somos</h2>
@@ -281,7 +292,7 @@
         </div>
     </div>
     </div>
-    <div class="boton-whatsapp">
+    <!-- <div class="boton-whatsapp">
         <a href="https://wa.me/3192136049" target="_blank">
             <img src="WhatsApp2.png" alt="WhatsApp" width="50" height="50">
         </a>
@@ -296,11 +307,11 @@
         <a href="https://maps.app.goo.gl/8Au96peNH6fU2JB16" target="_blank">
             <img src="maps_c.png" alt="maps" width="50" height="50">
         </a>
-    </div>
+    </div> -->
 
 
     <!-- FOOTER =============================================================================================== -->
-    <footer class="full-width pt-2">
+    <!-- <footer class="full-width pt-2">
         <div class="">
             <div class="columns">
 
@@ -327,10 +338,100 @@
                 </div>
             </div>
         </div>
+    </footer> -->
+    <footer class="hero has-background-black">
+        <div class="hero-body">
+
+            <div class="column is-flex is-align-content-center is-justify-content-center is-12-mobile is-4-tablet">
+                <img class="logo-footer" src="logo.png" alt="Logo">
+            </div>
+
+            <div
+                class="column is-flex is-flex-direction-column is-align-content-center is-justify-content-center is-12-mobile is-4-tablet">
+                <p class="title is-4 mb-4">City Médica</p>
+                <p>Torre 2 Consultorio 303</p>
+                <p><span class="has-text-weight-bold">Telefono:</span> +57 319 2136049</p>
+                <p><span class="has-text-weight-bold">WhatsApp:</span> +57 319 2136049</p>
+                <p><span class="has-text-weight-bold">Correo:</span> cevirionegro@gmail.com</p>
+                <p>Carrera 55 a No 35 - 227, Rionegro, Antioquia</p>
+                <p>&copy; <span id="currentYear"></span> Clínica CEVI. Todos los derechos reservados.</p>
+            </div>
+
+            <div
+                class="column is-flex is-flex-direction-column is-align-content-center is-justify-content-start is-12-mobile is-4-tablet">
+                <p class="title mb-2 is-5">Horario de Atención</p>
+                <p>Lunes a viernes: 9am-6pm</p>
+                <p>Sábados: 9am-4pm</p>
+            </div>
+        </div>
+        <span class="icon">
+            <a href="https://instagram.com/cevirionegro?igshid=MmU2YjMzNjRlOQ==" target="_blank">
+                <i class="fa fa-instagram has-text-white fa-lg"></i>
+            </a>
+        </span>
+        <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+        <p class="has-text-centered has-text-white">© Cevi 2024</p>
+        </div>
     </footer>
 
-    
+    <!-- WAPP BTN -->
+    <a href="https://api.whatsapp.com/send?phone=573002817744&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20M%C3%BAsicos%20de%20Fondo"
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+
+
+
 </body>
-<script src="app.js"></script>
+<!-- FONTAWESOME -->
+<script src="https://kit.fontawesome.com/98ca127883.js" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+    });
+
+
+
+    let getCurrentYear = new Date().getFullYear();
+    document.getElementById("currentYear").innerHTML = getCurrentYear;
+</script>
 
 </html>
+
+<!-- https://www.cufonfonts.com/font/trebuchet-ms-2 -->
+<!-- texto CEVI al lado del logo en el nav -->
+<!-- sombra al texto blanco encima del azul y mas grande texto del footer -->
+<!-- slider doctores, avatar circular para cada uno -->
+<!-- swiper js autoplay 2500ms de a 2, no responsive -->
+<!-- servicios sigue con acordeon -->
+<!-- titulos de subvision no dentro de la imagen -->
+<!-- Hola! ¿En qué podemos ayudarle? Estás comunicado con CEVI (Centro Especializado de la Visión) y Óptica SOS -->
+<!-- imagenes de profesionales redondas y sin efecto del hover -->
+<!-- hover al btn de wapp contactanos, eliminar btn que ya está que no lleva a nada. -->
+<!-- imagenes profesionales con borde redondeado tambien ver si se puede de dos colores -->
+
+
+<!-- #25B8D9
+#178CA6
+#95BF56
+#83A64E
+#0D0D0D -->
