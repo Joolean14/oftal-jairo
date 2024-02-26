@@ -7,6 +7,8 @@ body {
   font-family: 'Trebuchet', sans-serif !important;
 }
 
+
+/* WAPP */
 .float {
   position: fixed;
   width: 60px;
@@ -35,7 +37,7 @@ body {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 2vw;
   width: 100%;
   text-align: left;
   border: none;
@@ -51,7 +53,7 @@ body {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
+  padding: 0 4vw;
   background-color: white;
   display: none;
   overflow: hidden;
@@ -80,3 +82,20 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/* ========================================= */
+
+.blue-border {
+  border: 2px solid #25B8D9;
+  
+}
+
+.logo-footer {
+  width: 20vw;
+}
+
+/* #25B8D9
+#178CA6
+#95BF56
+#83A64E
+#0D0D0D  */
