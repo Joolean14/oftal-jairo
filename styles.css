@@ -63,8 +63,15 @@ body {
 
 
 .swiper {
-  width: 100%;
+  width: 60%;
   height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper {
+    width: 90%;
+  }
+  
 }
 
 .swiper-slide {
@@ -74,6 +81,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vw;
 }
 
 .swiper-slide img {
@@ -86,7 +94,7 @@ body {
 /* ========================================= */
 
 .blue-border {
-  border: 2px solid #25B8D9;
+  border: 2px solid #25B8D9 !important;
   
 }
 
@@ -94,6 +102,51 @@ body {
   width: 20vw;
 }
 
+
+
+.div-frame {
+  height: 25vw;
+  width: 100% !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+}
+
+
+.oftamologia-img {
+  background-image: url("oftamologiaia1.png");
+  
+}
+
+
+.servicios-img {
+  background-image: url("servicios.png");
+  
+}
+
+.optica-img {
+  background-image: url("optica.png");
+}
+
+.acerca-img {
+  background-image: url("acerca.png");
+}
+
+
+
+.div-frame {
+  height: 25vw;
+  width: 100% !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .div-frame {
+    height: 50vw;
+  }
+}
 /* #25B8D9
 #178CA6
 #95BF56
